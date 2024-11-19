@@ -1,8 +1,8 @@
-# hello-world-test
+# fake-business
 
-## Simple Website Tutorial
+## Fake Business Website Tutorial
 
-Welcome to the Simple Website Tutorial! This guide will walk you through the steps to create a basic website using HTML, CSS, and JavaScript.
+Greetings business owner! This manual will walk you through the steps to create a website for your business using HTML and CSS!
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@ Welcome to the Simple Website Tutorial! This guide will walk you through the ste
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
 - [Step-by-Step Guide](#step-by-step-guide)
-  - [1. Create the HTML File](#1-create-the-html-file)
+  - [1. Think Of Ideas!](#brainstorm)
   - [2. Create the CSS File](#2-create-the-css-file)
   - [3. Create the JavaScript File](#3-create-the-javascript-file)
   - [4. Link the CSS and JavaScript Files](#4-link-the-css-and-javascript-files)
@@ -26,33 +26,19 @@ In this tutorial, you'll learn how to create a simple website with an HTML struc
 
 Create a project directory and set up the following file structure:
 ```plaintext
-simple-website/
+fake-business/
 ├── index.html
-├── styles.css
-└── script.js
+└── style.css
 ```
 
 ## Step-by-Step Guide
 
-### 1. Create the HTML File
+### 1. Brainstorm!
 
-Open your code editor and create a file named `index.html`. Add the following code:
+Before programming your website, think of the following:
+- Name of business
+- What are you selling?
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  Hello World!
-  <script src="script.js"></script>
-</body>
-</html>
-```
 ### 2. Create the CSS File
 
 Create a file named `styles.css` and add the following code to style your webpage:
