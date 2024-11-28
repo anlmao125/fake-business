@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "ABeeZee", sans-serif;
 }
 
-#body-container {
-
+body {
 }
 
 .tb {
@@ -12,10 +12,40 @@
     border: 0.1px dashed darkgreen;
     background: repeating-linear-gradient(
         45deg,
-        #D6F6D5,
-        #D6F6D5 5px,
-        rgba(4, 86, 57, 0.8) 5px,
-        rgba(4, 86, 57, 0.8) 7px
+        transparent,
+        transparent 5%,
+        rgb(4, 86, 57) 5%,
+        rgb(4, 86, 57) calc(5% + 1px)
     );
     z-index: -1;
 }
+
+#logo-container {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+#header-name {
+    padding: 0.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+#body-container {
+    height: 100vh;
+}
+
+#shop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
