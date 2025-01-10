@@ -5,8 +5,6 @@
 Greetings business owner! This manual will walk you through the steps to create a website for your business using HTML and CSS!
 
 ## Table of Contents
-
-- [testing](#testing)
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
@@ -19,12 +17,10 @@ Greetings business owner! This manual will walk you through the steps to create 
 - [Things to Look Out For](#things-to-look-out-for)
 - [Conclusion](#conclusion)
 
-## testing 
-Hello!
-
 ## Introduction
+In this manual, you will learn more about CSS Flexbox 
 
-In this tutorial, you'll learn how to create a simple website with an HTML structure, styled with CSS, and interactivity added using JavaScript. By the end of this guide, you will have a basic understanding of how these three technologies work together to create a functional webpage.
+// Enter img of website here
 
 ## Project Structure
 
