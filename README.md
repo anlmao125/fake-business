@@ -1,7 +1,6 @@
 # fake-business
 
 ## Fake Business Website Tutorial
-
 Greetings business owner! This manual will walk you through the steps to create a website for your business using HTML and CSS!
 
 ## Table of Contents
@@ -18,17 +17,26 @@ Greetings business owner! This manual will walk you through the steps to create 
 - [Conclusion](#conclusion)
 
 ## Introduction
-In this manual, you will learn more about CSS Flexbox 
+In this manual, you will learn more about HTML, CSS -- including **flexbox** -- with the use of making your own business website!
 
-// Enter img of website here
+Here's a simple example of the result, there are some extra stuff you can do if you are fast!
+![readme-img1](https://github.com/user-attachments/assets/31037174-e788-4fb6-bff0-7f0ae2689297)
+
+## Prerequisites
+Before you start, here's a review of CSS Flexbox -- skip if you already know!
+- Imagine there is a big box -- let's call it `bigBox` -- and inside, it contains the following: `box1`, `box2`, and `box3`.
+  - `bigBox` is the **parent element**.
+  - `box1`, `box2`, and `box3` are the **child elements**.
+- **Why this is important:** The main idea of this is just elements inside of elements, which is what you'll see a lot of in this manual.
 
 ## Project Structure
-
-Create a project directory and set up the following file structure:
+Here's how the project is structured.
 ```plaintext
 fake-business/
 ├── index.html
+├── thankyou-page.html
 └── style.css
+The following files you can just leave as is: README.md & image-examples.
 ```
 
 ## Step-by-Step Guide
