@@ -9,10 +9,9 @@ Greetings business owner! This manual will walk you through the steps to create 
 - [Project Structure](#project-structure)
 - [Step-by-Step Guide](#step-by-step-guide)
   - [1. Brainstorm!](#1-brainstorm)
-  - [2. Download the project!](#-2-download-the-project)
+  - [2. Download the project!](#2-download-the-project)
   - [3. Steps listed](#3-steps-listed)
 - [Extra stuff!](#extra-stuff)
-- [Things to Look Out For](#things-to-look-out-for)
 - [Conclusion](#conclusion)
 
 ## Introduction
