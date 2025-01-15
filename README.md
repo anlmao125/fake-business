@@ -1,98 +1,164 @@
 # fake-business
 
 ## Fake Business Website Tutorial
-
 Greetings business owner! This manual will walk you through the steps to create a website for your business using HTML and CSS!
 
 ## Table of Contents
-
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
 - [Step-by-Step Guide](#step-by-step-guide)
-  - [1. Think Of Ideas!](#brainstorm)
-  - [2. Create the CSS File](#2-create-the-css-file)
-  - [3. Create the JavaScript File](#3-create-the-javascript-file)
-  - [4. Link the CSS and JavaScript Files](#4-link-the-css-and-javascript-files)
-  - [5. Open the HTML File in a Browser](#5-open-the-html-file-in-a-browser)
-- [Things to Look Out For](#things-to-look-out-for)
+  - [1. Brainstorm!](#1-brainstorm)
+  - [2. Download the project!](#2-download-the-project)
+  - [3. Steps listed](#3-steps-listed)
+- [Extra stuff!](#extra-stuff)
 - [Conclusion](#conclusion)
 
 ## Introduction
+In this manual, you will learn more about HTML, CSS -- including **flexbox** -- with the use of making your own business website!
 
-In this tutorial, you'll learn how to create a simple website with an HTML structure, styled with CSS, and interactivity added using JavaScript. By the end of this guide, you will have a basic understanding of how these three technologies work together to create a functional webpage.
+Here's a simple example of the result, there are some extra stuff you can do if you are fast!
+![readme-img2](https://github.com/user-attachments/assets/948a278b-8d83-48d7-b11f-c41f6da12dd3)
+
+## Prerequisites
+Before you start, here's a review of CSS Flexbox -- skip if you already know!
+- Imagine there is a big box -- let's call it `bigBox` -- and inside, it contains the following: `box1`, `box2`, and `box3`.
+  - `bigBox` is the **parent element**.
+  - `box1`, `box2`, and `box3` are the **child elements**.
+- **Why this is important:** The main idea of this is just elements inside of elements, which is what you'll see a lot of in this manual.
 
 ## Project Structure
-
-Create a project directory and set up the following file structure:
+Here's how the project is structured.
 ```plaintext
 fake-business/
 ├── index.html
+├── thankyou-page.html
 └── style.css
+The following files you can just leave as is: README.md & image-examples.
 ```
 
 ## Step-by-Step Guide
 
 ### 1. Brainstorm!
-
 Before programming your website, think of the following:
 - Name of business
 - What are you selling?
 
-### 2. Create the CSS File
+If you want to, draw out or imagine what your website would look like.
 
-Create a file named `styles.css` and add the following code to style your webpage:
+### 2. Download the project!
+Once you have a general idea of what you want for our website, download the project files.
+- The code will have comments -- looks like this `<!-- Hi, this is a comment -->` -- which will contain steps.
 
-```css
-body {
-  font-family: Arial, sans-serif;
-}
-```
+### 3. Steps listed
+- **1. )  Link the CSS!**
+  - Remember it's `<link rel="__________" href="_____.___">`
+  - What are you trying to connect?
+    - If you answered **stylesheet**, you are correct!
+  - What's the name of the file that you're trying to connect?
+    - If you answered **style.css** you are correct! However, the file name can be anything **as long as it ends with .css and it matches.**
+      - Here's an example! `<link rel="stylesheet" href="style.css">`
+  - Once you link it, refresh the page and you'll see something different!
 
-### 3. Create the JavaScript File
+- **2. )  What do you want to name your business as?**
+  - Find the following line of code, `<title> Name me! </title>`
+      - **Hint: the title tag is usually located in `<head>`!**
 
-Create a file named `script.js` 
+- **3. )  Change your header!**
+  - Find the following line of code, `<h1 id="header-name"> Name me! </h1>`
+      - **Hint: Look in `<body>`!**
+  - Enter your business name!
+  - If you want to change the color of the header, go to your stylesheet and find `#header-container`.
 
-### 4. Link the CSS and JavaScript Files
+- **4. ) Change the logo!**
+    - Go to your stylesheet and find `#logo-container`.
+    - From there you should see `background-image: url('image-examples/Logo-example.png');`
+        - You can change what's inside of `url()`.
+        - Find an image online and copy it's image link!
+            - Right click on the photo and find **Copy Image Link**
+        - Paste the link in `url()`
+            - It should look like this: `background-image: url("put-your-link-here.com");`
+            - Don't worry if the link is long, it's usually long.
+        - If this doesn't work:
+            - Download the image
+            - Put it in the project folder
+            - Change `background-image` to this `background-image: url('name-of-the-image-file.png');`
+                - Note: it doesn't have to be .png, it can also be .gif, .jpeg, etc...
 
-Ensure that the CSS and JavaScript files are linked correctly in your `index.html` file. The `<link>` tag for CSS should be inside the `<head>` section, and the `<script>` tag for JavaScript should be just before the closing `</body>` tag.
+- **5. )  Add your own item!**
+    - Find `<div class="item-container">` and change the following:
+        - item-name: What do you want to name this item as?
+        - item-price: How much does this item cost?
+        - image of item: There are two ways to do this.
+            - 1. ) Copy image link of the image you found and put it in `<img src="put-the-link-here">`
+            - **OR**
+            - 2. ) Download the image and put it in the project folder then put the image file name
+                 - It should be something like this: `<img src="name-of-file.png">`
+                     - Remember that the file extenstion `.png` can be .jpeg, .gif, etc...
+    - Use the inspect command to see how the `div` boxes are structured, can you figure out what are the child and parent elements?
+        - To do the inspect command:
+            - On windows: ctrl + shift + I
+            - On mac: Command + Option + I (⌘+⌥+I)
 
-### 5. Open the HTML File in a Browser
+- **6. ) Repeat!**
+    - Congrats, you made one item! Now you can make as much by copying and pasting
+    - ```
+      <div class="item-container">
+          <div class="item-img">
+              <img src="image-examples/item-example1.jpg">
+          </div>
+          <div class="item-descriptor">
+              <div class="item-name">
+                  Rubber Chicken
+              </div>
+              <div class="item-price">$5.00</div>
+          </div>
+      </div>
+    - Repeat step 5 for this!
 
-Open your `index.html` file in a web browser to see your simple website in action. You should see a styled heading, a paragraph, and a button that displays an alert when clicked.
-
-## Things to Look Out For
-
-- Ensure the file paths in the `<link>` and `<script>` tags are correct.
-- Use proper HTML structure and semantics.
-- Keep your CSS organized and use meaningful class names.
-- Avoid inline styles and JavaScript as much as possible for better maintainability.
-- Test your website in different browsers to ensure compatibility.
-
-## Stretch Goals
-If you finish early, feel free to try out these additions to your website!
-
-### 6. Make it a Header!
-Enclose the "Hello World!" in an ``<h1>`` tag as shown here:
-```<h1> Hello World! </h1>```
-<br>
-The full code should now look like this:
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1> Hello World! </h1>
-  <script src="script.js"></script>
-</body>
-</html>
-```
-
+## Extra stuff!
+Nice job! You completed the basic outline, here are some extra stuff you can do if you want!
+- 1. ) Add a buy button!
+     - Add the following code below `<div class="item-price"> </div>`
+         - `<button class="buy-button" onclick="buyPage()"> Buy Now </button>`
+         - If you have multiple items in your shop, make sure to add it to the other items too!
+         - Here's an example of what `<div class="item-container">` looks like after you added the button!
+             - ```
+               <div class="item-container">
+                    <div class="item-img">
+                        <img src="image-examples/item-example1.jpg">
+                    </div>
+                    <div class="item-descriptor">
+                        <div class="item-name">
+                            Rubber Chicken
+                        </div>
+                        <div class="item-price">$5.00</div>
+                        <button class="buy-button" onclick="buyPage()"> Buy Now </button>
+                    </div>
+                </div>
+            - Notice how `<button>` has `onclick="buyPage()"`?
+                - This uses JavaScript -- you'll learn this later -- which makes your website more interactive.
+                - Here's the following code:
+                    - ```
+                      <script>
+                          function buyPage() {
+                              window.location.assign("thankyou-page.html");
+                          }
+                      </script>
+                    - Add this to the bottom of the body.
+                      - It should be something like this:
+                        - ```
+                          <body>
+                            ...
+                            <script>
+                              function buyPage() {
+                                  window.location.assign("thankyou-page.html");
+                              }
+                            </script>
+                          </body>
+                    - Notice how `window.location.assign();` contains a html page? You can find that file and change how it looks.
+            - Refresh the page to see the changes
+                - If you want to change how the button looks, go to your stylesheet and find `.buy-button`.
 
 ## Conclusion
 
