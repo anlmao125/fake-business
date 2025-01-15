@@ -95,6 +95,10 @@ Once you have a general idea of what you want for our website, download the proj
             - 2. ) Download the image and put it in the project folder then put the image file name
                  - It should be something like this: `<img src="name-of-file.png">`
                      - Remember that the file extenstion `.png` can be .jpeg, .gif, etc...
+    - Use the inspect command to see how the `div` boxes are structured, can you figure out what are the child and parent elements?
+        - To do the inspect command:
+            - On windows: ctrl + shift + I
+            - On mac: Command + Option + I (⌘+⌥+I)
 
 - **6. ) Repeat!**
     - Congrats, you made one item! Now you can make as much by copying and pasting
